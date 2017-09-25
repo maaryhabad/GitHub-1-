@@ -1,0 +1,218 @@
+html, body, div, span, applet, object, iframe, blockquote, pre, h1, h2, h3, h4, h5, h6, p,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: "Lato";
+    background-color: #581d22;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+
+}
+.menuItem {
+  display: inline;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  border: 8px double white;
+  border-radius: 10px;
+  padding: 6px;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 0.2em #c0c0c0, 0 0 0.2em #c0c0c0, 0 0 0.2em #581d22;
+  
+}
+.menuItem:hover {
+  color: black;
+}
+strong {
+  color: white;
+}
+.subMenu {
+  position: fixed;
+  justify-content: space-between;
+  border: 8px double white;
+  border-radius: 10px;
+  padding: 6px;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 0.2em #c0c0c0, 0 0 0.2em #c0c0c0, 0 0 0.2em #581d22;
+}
+.subMenu:hover {
+  color:black;
+}
+.menu {
+  padding-right: 1%;
+  padding-top: 2%;
+}
+
+ul {
+  width: 100%;
+  margin-left: 1%;
+}
+
+p ul li {
+  list-style-type: square;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #581d22;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  height: 210px;
+  position: relative;
+  align-items: center;
+  border-bottom: 6px ridge black;
+  box-shadow: 5px 5px 10px #404040;
+  padding-bottom: 2%;
+  width: 100%;
+  position: fixed;
+  text-decoration: none;
+  
+}
+a{
+  color:white;
+}
+a:hover {
+  color: black;
+}
+.titulo {
+  padding-top: 0.5%;
+  color: white;
+  text-shadow: 0 0 0.2em #c0c0c0, 0 0 0.2em #c0c0c0, 0 0 0.2em #581d22;
+  font-size: 35px;
+  padding-bottom: 0;
+}
+
+.tituloCont1 {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-top: 20%;
+  color: white;
+  text-shadow: 0 0 0.2em #c0c0c0, 0 0 0.2em #c0c0c0, 0 0 0.2em black;
+  border-bottom: 5px dotted black;
+}
+.tituloCont {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  color: white;
+  text-shadow: 0 0 0.2em #c0c0c0, 0 0 0.2em #c0c0c0, 0 0 0.2em black;
+  border-bottom: 5px dotted black;
+}
+
+.subtitulo {
+  padding-top: 1%;
+  color: white;
+  text-shadow: 0 0 0.2em #c0c0c0, 0 0 0.2em #c0c0c0, 0 0 0.2em black;
+  font-size: 100%;
+  padding-bottom: 1%;
+}
+
+.imagem {
+  display: block;
+  margin-top: 5px;
+  border: 5px dotted #aa7176;
+  border-radius: 12%;
+}
+
+.conteudo {
+  color: #cfafb2;
+  text-shadow: none;
+  font-size: 150%;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-bottom: 2.5%;
+  padding-right: 2%;
+  text-align: justify;
+  line-height: 150%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 2px rgba(0,0,0,0.2);
+    list-style-type: none;
+    z-index: 1;
+    margin-bottom: 16px;
+    margin-top: 15px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+header.recolhida {
+    height: 160px;
+    -webkit-transition: height 0.2s;
+}
+header.recolhida .imagem {
+    display: block; 
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    height: 20vh;
+    width: 20vh;
+    -webkit-transition: left 1s;
+}
+header.recolhida .titulo {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 120px; /*lado direito da tela*/
+  font-size: 150%;
+  justify-content: right;
+  -webkit-transition: right 1s;
+}
+header.recolhida .subtitulo {
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 120px;
+  font-size: 130%;
+  justify-content: right;
+  -webkit-transition: right 1s;
+}
+header.recolhida .menu {
+  display:block;
+  position: absolute;
+  top: 105px;
+  left: 190px;
+  -webkit-transition: left 1s;
+}
